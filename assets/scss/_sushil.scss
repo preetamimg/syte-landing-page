@@ -1,4 +1,46 @@
 @include media-breakpoint(basic) {
+    .manageSection {
+        background-color: lighten($theme-orange, 48);
+        & .leftSection {
+            & .cirleBox {
+                margin: auto;
+                padding: 110px;
+                background-color: $theme1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & .textBox {
+                    background-color: $white;
+                    color: $black;
+                    font-size: 14px;
+                    padding: 16px 12px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        & .rightSection {
+            & .secHeading {
+                font-size: 46px;
+                line-height: 1.4;
+                font-weight: 700;
+                color: darken($theme-orange, 35);
+                margin-bottom: 30px;
+            }
+            & .secText {
+                font-size: 18px;
+                font-weight: normal;
+                font-weight: 400;
+                color: $black;
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
