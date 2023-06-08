@@ -85,7 +85,7 @@
                     }
                 }
                 & .androidBtn {
-                    gap: 5px;
+                    gap: 10px;
                     & .android_btn {
                         text-decoration: none;
                         background-color: $black;
@@ -198,40 +198,35 @@
         & .innersection {
             & .contantSide {
                 & .mainHeading {
-                    font-size: 55px;
+                    font-size: 45px;
                 }
                 & .subHeading {
-                    font-size: 28px;
+                    font-size: 25px;
                 }
                 & .inputBox {
                     & .input-group-prepend, & .form-control {
-                        height: 48px;
+                        height: 45px;
                     }
                     & .input-group-prepend {
                         & span {
-                            // border-radius: 10px 0px 0px 10px;
                         }
                     }
                     & span , & .form-control {
                         font-size: 16px;
                     }
                     & .form-control {
-                        // border-radius: 0px 10px 10px 0px;
                     }
                 }
                 & .customBtn {
-                    height: 48px;
+                    height: 45px;
                     font-size: 16px;
-                    // border-radius: 10px;
                     &:hover{
                         
                     }
                 }
                 & .android_btn {
-                    // gap: 10px;
                     font-size: 14px;
-                    height: 48px;
-                    // border-radius: 10px;
+                    height: 45px;
                     &:hover{
                     }
                 }
@@ -239,11 +234,11 @@
             & .mockSide {
                 position: relative;
                 &::before{
-                    // max-width: 450px;
-                    // max-height: 450px;
+                    max-width: 250px;
+                    max-height: 250px;
                 }
                 & .heroimg {
-                    // max-width: 300px;
+                    max-width: 200px;
                 }
             }
         }
@@ -254,10 +249,10 @@
         & .innersection {
             & .contantSide {
                 & .mainHeading {
-                    font-size: 45px;
+                    // font-size: 45px;
                 }
                 & .subHeading {
-                    font-size: 25px;
+                    // font-size: 25px;
                 }
                 & .inputBox {
                     & .input-group-prepend, & .form-control {
@@ -294,8 +289,8 @@
             }
             & .mockSide {
                 &::before{
-                    // max-width: 450px;
-                    // max-height: 450px;
+                    max-width: 300px;
+                    max-height: 300px;
                 }
                 & .heroimg {
                     // max-width: 300px;
@@ -349,11 +344,11 @@
             }
             & .mockSide {
                 &::before{
-                    max-width: 350px;
-                    max-height: 350px;
+                    // max-width: 350px;
+                    // max-height: 350px;
                 }
                 & .heroimg {
-                    max-width: 250px;
+                    // max-width: 250px;
                 }
             }
         }
@@ -369,7 +364,8 @@
                 & .subHeading {
                 }
                 & .inputBox {
-                    gap: 5px;
+                    margin: 0px !important;
+                    gap: 10px;
                     & .input-group-prepend, & .form-control {
                     }
                     & .input-group-prepend {
@@ -381,6 +377,7 @@
                     & .form-control {
                     }
                     & .getBtn {
+                        margin-bottom: 10px;
                         min-width: 100%;
                     }
                 }
@@ -397,11 +394,11 @@
             }
             & .mockSide {
                 &::before{
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 250px;
+                    max-height: 250px;
                 }
                 & .heroimg {
-                    max-width: 200px;
+                    max-width: 180px;
                 }
             }
         }
