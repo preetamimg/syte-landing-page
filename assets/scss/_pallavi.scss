@@ -1,4 +1,69 @@
 @include media-breakpoint(basic) {
+    .featuresFluid{
+        background-color: #F2FEDC;
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 10px;
+                }
+                & .featuresSubHeading{
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    width: 150px;
+                    height: 150px;
+                    background-color: $theme1;
+                    border-radius: 50%;
+                    margin: auto;
+                    & .featureImg{
+                        width: 50px;
+                        height: 50px;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                & .featutrePara{
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: normal;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                width: 100%;
+                height: 100%;
+                & img{
+                    width: 100%;
+                    height: 1005;
+                }
+            }
+            & .applictionMainHeading{
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 1.4;
+                margin-bottom: 10px;
+            }
+            & .applictionSubHeading{
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
@@ -14,12 +79,121 @@
 
 
 @include media-breakpoint-down(xxl) {
+    .featuresFluid{
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                }
+                & .featuresSubHeading{
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    & .featureImg{
+                        & img{
+                        }
+                    }
+                }
+                & .featutrePara{
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(xl) {
+    .featuresFluid{
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                }
+                & .featuresSubHeading{
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    & .featureImg{
+                        & img{
+                        }
+                    }
+                }
+                & .featutrePara{
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(lg) {
+    .featuresFluid{
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                }
+                & .featuresSubHeading{
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    & .featureImg{
+                        & img{
+                        }
+                    }
+                }
+                & .featutrePara{
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(md) {
+    .featuresFluid{
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                    font-size: 17px;
+                }
+                & .featuresSubHeading{
+                    font-size: 25px;
+                    line-height: normal;
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    & .featureImg{
+                        & img{
+                        }
+                    }
+                }
+                & .featutrePara{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
+    .featuresFluid{
+        & .featuresContainer{
+            & .featuresbg{
+                & .featuresMainHeading{
+                    font-size: 12px;
+                }
+                & .featuresSubHeading{
+                    font-size: 20px;
+                    line-height: normal;
+                }
+            }
+            & .featureCard{
+                & .featureImgBg{
+                    & .featureImg{
+                        & img{
+                        }
+                    }
+                }
+                & .featutrePara{
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }

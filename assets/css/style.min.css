@@ -1,1 +1,81 @@
-/*# sourceMappingURL=style.min.css.map */
+.featuresFluid {
+  background-color: #F2FEDC;
+}
+.featuresFluid .featuresContainer .featuresbg .featuresMainHeading {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.featuresFluid .featuresContainer .featuresbg .featuresSubHeading {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.featuresFluid .featuresContainer .featureCard .featureImgBg {
+  width: 150px;
+  height: 150px;
+  background-color: #FFDF16;
+  border-radius: 50%;
+  margin: auto;
+}
+.featuresFluid .featuresContainer .featureCard .featureImgBg .featureImg {
+  width: 50px;
+  height: 50px;
+}
+.featuresFluid .featuresContainer .featureCard .featureImgBg .featureImg img {
+  width: 100%;
+  height: 100%;
+}
+.featuresFluid .featuresContainer .featureCard .featutrePara {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.applicationFluid .applicationContainer .applicationImg {
+  width: 100%;
+  height: 100%;
+}
+.applicationFluid .applicationContainer .applicationImg img {
+  width: 100%;
+  height: 1005;
+}
+.applicationFluid .applicationContainer .applictionMainHeading {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.applicationFluid .applicationContainer .applictionSubHeading {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .featuresFluid .featuresContainer .featuresbg .featuresMainHeading {
+    font-size: 17px;
+  }
+  .featuresFluid .featuresContainer .featuresbg .featuresSubHeading {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .featuresFluid .featuresContainer .featureCard .featutrePara {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .featuresFluid .featuresContainer .featuresbg .featuresMainHeading {
+    font-size: 12px;
+  }
+  .featuresFluid .featuresContainer .featuresbg .featuresSubHeading {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .featuresFluid .featuresContainer .featureCard .featutrePara {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=style.min.css.map */
