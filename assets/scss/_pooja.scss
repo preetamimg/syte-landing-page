@@ -1,25 +1,1402 @@
 @include media-breakpoint(basic) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                        font-size: 36px;
+                        line-height: 1.1;
+                        color: $black;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    & .paymentPara {
+                        margin-bottom: 15px;
+                        line-height: 1.8;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+                }
+                & .paymentAmount {
+                    border: 8px solid $white;
+                    background-color: $theme1;
+                    height: 540px !important;
+                    // max-width: 460px !important;
+                    width: 100%;
+                    // height: 100%;
+                    margin: auto;
+                    border-radius: 50%;
+                    position: relative;
+                    & .paymentAmountDetailOuter {
+                        background-color: $white;
+                        position: absolute;
+                        top: 50%;
+                        z-index: 2;
+                        transform: translate(-50%, -50%);
+                        left: 50%;
+                        width: 92%;
+                        & .paymentAmountContent {
+                            background-color: #F78702;
+                            & .paymentAmountHeading {
+                                
+                                font-size: 22px;
+                                font-weight: 500;
+                                color: $white;
+                            }
+                            & .paymentAmountTitle {
+                                color: $white;
+                                font-size: 16px; 
+                                font-weight: 500;
+                            }
+                            & .paymentAmountText {
+                                color: $white;
+                                font-size: 16px; 
+                                font-weight: 500;
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    margin: 0;
+                                    padding: 0;
+                                    justify-content: end;
+                                    display: flex;
+                                    & .paymentLinkItems {
+                                        list-style: none;
+                                        padding-right: 14px;
+                                        & .paymentLinkItemLink {
+                                            width: 20px;
+                                            height: 20px;
+                                            display: flex;
+                                            & img {
+                                                aspect-ratio: 10/10;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                        &:last-child {
+                                            padding-right: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: 25%;
+                    left: 4%;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+                & .paymentIcons2 {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    bottom: 22%;
+                    left: 6%;  
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+                & .paymentIcons3 {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    right: 5%;
+                    top: 11%;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+                & .paymentIcons4 {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    right: 5%;
+                    bottom: 7%;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            background-color: lighten($color: $theme2, $amount: 43);
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                        font-size: 36px;
+                        line-height: 1.1;
+                        color: $black;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    & .form-group {
+                        & label {
+                            font-size: 14px;
+                            padding-bottom: 2px;
+                            font-weight: 600;
+                        }
+                        & .form-control {
+                            // border: 1px solid $theme1;
+                            border: 1px solid $gray-300;
+                            &:active, &:hover, &:focus {
+                                border: 1px solid $theme1;
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        border: none;
+                        position: relative;
+                        padding: 8px 35px;
+                        border-radius: 30px;
+                        display: inline-block;
+                        // transition: all .5s ease-in-out;
+                        font-weight: 600;
+                        font-size: 16px;
+                        background-color: $theme1;
+                        &:hover {
+                            background-color: darken($color: $theme1, $amount: 10);
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+                font-size: 36px;
+                line-height: 1.1;
+                color: $black;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            & .contactDetailTitle {
+                font-size: 20px;
+                color: $black;
+                font-weight:600;
+                padding-right: 10px;
+                padding-bottom: 15px;
+            }
+            & .contactDetailImg {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                background-color: $theme1;
+                padding: 8px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+            & .contactDetailText {
+                font-weight: 400;
+                font-size: 16px;
+                color: $gray-600;
+            }
+            & .socialIconItem {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                & .socialIconItems {
+                    list-style: none;
+                    padding-right: 10px;
+                    & .socialIconItemsLink {
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+                        border-radius: 50%;
+                        & img {
+                            aspect-ratio: 10/10;
+                            object-fit: contain;
+                        }
+                        &.fb {
+                            background-color: #428ecc;
+                        }
+                        &.wa {
+                            background-color: #6cb74e;
+                        }
+                        &.ins {
+                            background-color:#e84839;
+                        }
+                        &.yt {
+                            background-color:#d3273f;
+                        }
+                        &.pin {
+                            background-color:#e84839;
+                        }
+                        &.link {
+                            background-color:#428ecc;
+                        }
+                    }
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-up(md) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-up(lg) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-up(xl) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-up(xxl) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 
 @include media-breakpoint-down(xxl) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-down(xl) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    
+                    height: 450px !important;
+                    & .paymentAmountDetailOuter {
+                        width: 87%;
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-down(lg) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                        font-size: 30px;
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    height: 330px !important;
+                    & .paymentAmountDetailOuter {
+                        width: 67%;
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                                font-size: 18px;
+                            }
+                            & .paymentAmountTitle {
+                                font-size: 14px;
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    width: 80px;
+                    height: 80px;
+                    top: 15%;
+                    left: 1%;
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-down(md) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                        font-size: 28px;
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    height: 510px !important;
+                    & .paymentAmountDetailOuter {
+                        width: 87%;
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
+
 @include media-breakpoint-down(sm) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                        font-size: 24px;
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    height: 330px !important;
+                    & .paymentAmountDetailOuter {
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                            }
+                            & .paymentAmountTitle {
+                            }
+                            & .paymentAmountText {
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        & .paymentLinkItemLink {
+                                            width: 16px;
+                                            height: 16px;
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
 }
