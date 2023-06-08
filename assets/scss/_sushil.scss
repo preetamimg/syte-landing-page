@@ -3,12 +3,17 @@
         background-color: lighten($theme-orange, 48);
         & .leftSection {
             & .cirleBox {
+                max-width: 530px;
+                max-height: 530px;
+                width: 100%;
+                height: 100%;
                 margin: auto;
                 padding: 110px;
                 background-color: $theme1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
                 & .textBox {
                     background-color: $white;
                     color: $black;
@@ -18,20 +23,56 @@
                     border-radius: 5px;
                     margin-bottom: 15px;
                     white-space: nowrap;
+                    &.box1 {
+                        z-index: 2;
+                    }
+                }
+                & .imagesBox {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    inset: 0;
+                    & .topLeftImg {        
+                        display: block;
+                        height: 205px;
+                        position: absolute;
+                        top: -49px;
+                        left: 0px;
+                        transform: rotate(342deg);
+                    }
+                    & .topRightImg {
+                        position: absolute;
+                        height: 202px;
+                        right: 15px;
+                        top: 15px;
+                        z-index: 1;
+                    }
+                    & .bottomLeftImg {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 215px;
+                    }
+                    & .bottomRighttImg {
+                        position: absolute;
+                        height: 202px;
+                        bottom: 0;
+                        right: 0;
+                    }
                 }
             }
         }
         & .rightSection {
             & .secHeading {
-                font-size: 46px;
+                font-size: 56px;
                 line-height: 1.4;
                 font-weight: 700;
                 color: darken($theme-orange, 35);
                 margin-bottom: 30px;
             }
             & .secText {
-                font-size: 18px;
-                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
                 font-weight: 400;
                 color: $black;
                 margin-bottom: 25px;
@@ -58,6 +99,38 @@
 @include media-breakpoint-down(xxl) {
 }
 @include media-breakpoint-down(xl) {
+    .manageSection {
+        & .leftSection {
+            & .cirleBox {
+                max-width: 430px;
+                max-height: 430px;
+                & .textBox {
+                    &.box1 {
+                    }
+                }
+                & .imagesBox {
+                    & .topLeftImg {
+                    }
+                    & .topRightImg {
+                    }
+                    & .bottomLeftImg {
+                    }
+                    & .bottomRighttImg {
+                    }
+                }
+            }
+        }
+        & .rightSection {
+            & .secHeading {
+                font-size: 42px;
+            }
+            & .secText {
+                font-size: 18px;
+                &:last-child {
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(lg) {
 }
