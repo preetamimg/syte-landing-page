@@ -1,5 +1,8 @@
 @include media-breakpoint(basic) {
     .headersection {
+        & .navbar-brand {
+            height: 100px;
+        }
         & .navitems {
             & .navbar-nav {
                 gap: 35px;
@@ -36,11 +39,19 @@
                 }
             }
         }
+        & .offcanvasBtn {
+            width: 35px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            display: none;
+        }
     }
 
     .heroSection {
         background-color: lighten($theme2, 40);
         & .innersection {
+            padding-top: 25px;
             & .contantSide {
                 & .mainHeading {
                     font-size: 75px;
@@ -121,6 +132,7 @@
             }
         }
     }
+    
 }
 
 @include media-breakpoint-up(sm) {
@@ -245,6 +257,34 @@
     }
 }
 @include media-breakpoint-down(md) {
+    .headersection {
+        & .navbar-brand {
+        }
+        & .navitems {
+            & .navbar-nav {
+                gap: 35px;
+                & .nav-item {
+                    & .nav-link {
+                        &::before{
+                        }
+                        &:hover{
+                            &::before{
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+            display: flex;
+        }
+    }
     .heroSection {
         & .innersection {
             & .contantSide {
