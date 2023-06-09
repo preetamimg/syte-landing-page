@@ -301,29 +301,76 @@
     }
 
     .offcanvasSection {
-        background: red;
+        // background: red;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         transition: all .5s;
         z-index: 9999;
+        width: 100%;
         &.hide{
             visibility: hidden;
-            width: 0px;
+            max-width: 0px;
             & .offcanvasInner {
                 display: none;
             }
         }
         &.show {
             visibility: visible;
-            width: 290px;
+            max-width: 290px;
             & .offcanvasInner{
-                display: flex;
+                // display: flex;
             }
         }
         & .offcanvasInner {
-            
+            & .offcanvasHeader {
+                & .offcanvasLogoImg {
+                    width: 100px;
+                    height: 100px;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+                & .closeBtn {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 7px;
+                    background: $theme1;
+                    border-radius: 50%;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                    }
+                }
+            }
+            & .offcanvasBody {
+                & .offcanvasItems {
+                    margin: 0;
+                    padding: 0;
+                    & .offcanvasList {
+                        list-style: none;
+                        // padding: 10px 0px;
+                        border-bottom: 1px solid $gray-700;
+                        & .offcanvasListLink {
+                            display: flex;
+                            color: $white;
+                            font-size: 16px;
+                            width: 100%;
+                            padding: 10px 10px;
+                            text-decoration: none;
+                            &:hover {
+                                background-color:$theme1;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
