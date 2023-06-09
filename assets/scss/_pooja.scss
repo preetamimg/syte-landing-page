@@ -347,7 +347,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1029;
+        z-index: -2;
         width: 100vw;
         height: 100vh;
         background-color: #000;
@@ -356,6 +356,7 @@
         }
         &.shows {
             opacity: .5;
+            z-index: 1031;
         }
     }
 }
