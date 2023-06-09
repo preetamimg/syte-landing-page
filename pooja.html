@@ -11,6 +11,19 @@
 </head>
 
 <body>
+    <div class="container-fluid offcanvasButton">
+        <div class="container">
+            <div class="offcanvas">
+                <button class="btn bg-primary p-2 text-white shadow-none offcanvasBtn">button</button>
+                <div class="offcanvasSection hide">
+                    <div class="offcanvasInner justify-content-between px-3">
+                        <div class="heading">hello</div>
+                        <div class="crossimg offcanvasBtn btn">X</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid paymentsection my-4 my-md-5">
         <div class="container paymentInner">
             <div class="row paymentRow align-items-center">
@@ -210,5 +223,21 @@
     </div>
     <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
-
+<script>
+    var offcanvasBtn = document.querySelectorAll('.offcanvasBtn');
+    var offcanvasSection = document.querySelector('.offcanvasSection');
+    var crossimg = document.querySelector('.crossimg');
+    offcanvasBtn.forEach(offbtn =>{
+        offbtn.addEventListener('click', () => {
+        if(offcanvasSection.classList.contains('hide')){
+            offcanvasSection.classList.remove('hide');
+            offcanvasSection.classList.add('show');
+        }
+        else if(offcanvasSection.classList.contains('show')) {
+            offcanvasSection.classList.remove('show');
+            offcanvasSection.classList.add('hide');
+        }
+        });
+    })
+</script>
 </html>

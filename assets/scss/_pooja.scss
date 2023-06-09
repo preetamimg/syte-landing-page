@@ -267,6 +267,38 @@
             }
         }
     }
+    .offcanvasButton {
+        & .offcanvas {
+            position: relative;
+            
+            & .offcanvasSection {
+                background: red;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all .5s;
+                z-index: 2;
+                &.hide{
+                    visibility: hidden;
+                    width: 0px;
+                    & .offcanvasInner {
+                        display: none;
+                    }
+                }
+                &.show {
+                    visibility: visible;
+                    width: 290px;
+                    & .offcanvasInner{
+                        display: flex;
+                    }
+                }
+                & .offcanvasInner {
+                    
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
