@@ -1,4 +1,138 @@
 @include media-breakpoint(basic) {
+    .headersection {
+        & .navbar-brand {
+            height: 100px;
+        }
+        & .navitems {
+            & .navbar-nav {
+                gap: 35px;
+                & .nav-item {
+                    & .nav-link {
+                        font-weight: 600;
+                        font-size: 20px;
+                        transition: all ease-in-out 0.3s;
+                        position: relative;
+                        color: $black;
+                        &::before{
+                            content: '';
+                            width: 0px;
+                            height: 2px;
+                            position: absolute;
+                            left: 0;
+                            background-color: $black;
+                            bottom: 0;
+                            transition: all ease-in-out 0.3s;
+                        }
+                        &:hover{
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+            width: 35px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            display: none;
+        }
+    }
+
+    .heroSection {
+        background-color: lighten($theme2, 40);
+        & .innersection {
+            padding-top: 25px;
+            & .contantSide {
+                & .mainHeading {
+                    font-size: 75px;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .subHeading {
+                    font-size: 35px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                & .inputBox {
+                    & .input-group-prepend, & .form-control {
+                        height: 55px;
+
+                    }
+                    & .input-group-prepend {
+                        & span {
+                            border-radius: 10px 0px 0px 10px;
+                        }
+                    }
+                    & span , & .form-control {
+                        color: $black;
+                        border: 2px solid $black;
+                        font-size: 20px;
+                        font-weight: bolder;
+                    }
+                    & .form-control {
+                        border-radius: 0px 10px 10px 0px;
+                    }
+                }
+                & .customBtn {
+                    background-color: $theme1;
+                    font-weight: bold;
+                    height: 55px;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: darken($theme1,8);
+                        
+                    }
+                }
+                & .androidBtn {
+                    gap: 10px;
+                    & .android_btn {
+                        text-decoration: none;
+                        background-color: $black;
+                        transition: all 0.3s ease-in-out;
+                        gap: 10px;
+                        font-size: 16px;
+                        line-height: normal;
+                        height: 55px;
+                        border-radius: 10px;
+                        &:hover{
+                            background-color: lighten($black, 10);
+                        }
+                    }
+                }
+            }
+            & .mockSide {
+                position: relative;
+                &::before{
+                    max-width: 500px;
+                    height: 100%;
+                    width: 100%;
+                    max-height: 500px;
+                    border-radius: 100%;
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    background-color: $theme1;
+                }
+                & .heroimg {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    
 }
 
 @include media-breakpoint-up(sm) {
@@ -16,10 +150,297 @@
 @include media-breakpoint-down(xxl) {
 }
 @include media-breakpoint-down(xl) {
+    .heroSection {
+        & .innersection {
+            & .contantSide {
+                & .mainHeading {
+                    font-size: 65px;
+                }
+                & .subHeading {
+                    font-size: 32px;
+                }
+                & .inputBox {
+                    & .input-group-prepend, & .form-control {
+                        height: 52px;
+                    }
+                    & .input-group-prepend {
+                        & span {
+                            // border-radius: 10px 0px 0px 10px;
+                        }
+                    }
+                    & span , & .form-control {
+                        font-size: 18px;
+                    }
+                    & .form-control {
+                        // border-radius: 0px 10px 10px 0px;
+                    }
+                }
+                & .customBtn {
+                    height: 52px;
+                    font-size: 18px;
+                    // border-radius: 10px;
+                    &:hover{
+                        
+                    }
+                }
+                & .android_btn {
+                    // gap: 10px;
+                    font-size: 15px;
+                    height: 52px;
+                    // border-radius: 10px;
+                    &:hover{
+                    }
+                }
+            }
+            & .mockSide {
+                position: relative;
+                &::before{
+                    max-width: 450px;
+                    max-height: 450px;
+                }
+                & .heroimg {
+                    // max-width: 300px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(lg) {
+    .heroSection {
+        & .innersection {
+            & .contantSide {
+                & .mainHeading {
+                    font-size: 45px;
+                }
+                & .subHeading {
+                    font-size: 25px;
+                }
+                & .inputBox {
+                    & .input-group-prepend, & .form-control {
+                        height: 45px;
+                    }
+                    & .input-group-prepend {
+                        & span {
+                        }
+                    }
+                    & span , & .form-control {
+                        font-size: 16px;
+                    }
+                    & .form-control {
+                    }
+                }
+                & .customBtn {
+                    height: 45px;
+                    font-size: 16px;
+                    &:hover{
+                        
+                    }
+                }
+                & .android_btn {
+                    font-size: 14px;
+                    height: 45px;
+                    &:hover{
+                    }
+                }
+            }
+            & .mockSide {
+                position: relative;
+                &::before{
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+                & .heroimg {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(md) {
+    .headersection {
+        & .navbar-brand {
+        }
+        & .navitems {
+            & .navbar-nav {
+                gap: 35px;
+                & .nav-item {
+                    & .nav-link {
+                        &::before{
+                        }
+                        &:hover{
+                            &::before{
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+            display: flex;
+        }
+    }
+    .heroSection {
+        & .innersection {
+            & .contantSide {
+                & .mainHeading {
+                    // font-size: 45px;
+                }
+                & .subHeading {
+                    // font-size: 25px;
+                }
+                & .inputBox {
+                    & .input-group-prepend, & .form-control {
+                        height: 45px;
+                    }
+                    & .input-group-prepend {
+                        & span {
+                            // border-radius: 10px 0px 0px 10px;
+                        }
+                    }
+                    & span , & .form-control {
+                        // font-size: 16px;
+                    }
+                    & .form-control {
+                        // border-radius: 0px 10px 10px 0px;
+                    }
+                }
+                & .customBtn {
+                    height: 45px;
+                    // font-size: 16px;
+                    // border-radius: 10px;
+                    &:hover{
+                        
+                    }
+                }
+                & .android_btn {
+                    // gap: 10px;
+                    // font-size: 14px;
+                    height: 45px;
+                    // border-radius: 10px;
+                    &:hover{
+                    }
+                }
+            }
+            & .mockSide {
+                &::before{
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+                & .heroimg {
+                    // max-width: 300px;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
+    .heroSection {
+        & .innersection {
+            & .contantSide {
+                & .mainHeading {
+                    font-size: 30px;
+                }
+                & .subHeading {
+                    font-size: 20px;
+                }
+                & .inputBox {
+                    & .input-group-prepend, & .form-control {
+                        // height: 40px;
+                    }
+                    & .input-group-prepend {
+                        & span {
+                            // border-radius: 10px 0px 0px 10px;
+                        }
+                    }
+                    & span , & .form-control {
+                        font-size: 15px;
+                    }
+                    & .form-control {
+                        // border-radius: 0px 10px 10px 0px;
+                    }
+                }
+                & .customBtn {
+                    // height: 40px;
+                    font-size: 15px;
+                    // border-radius: 10px;
+                    &:hover{
+                        
+                    }
+                }
+                & .android_btn {
+                    gap: 8px;
+                    // font-size: 14px;
+                    height: 45px;
+                    // border-radius: 10px;
+                    &:hover{
+                    }
+                }
+            }
+            & .mockSide {
+                &::before{
+                    // max-width: 350px;
+                    // max-height: 350px;
+                }
+                & .heroimg {
+                    // max-width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .heroSection {
+        & .innersection {
+            & .contantSide {
+                & .mainHeading {
+                }
+                & .subHeading {
+                }
+                & .inputBox {
+                    margin: 0px !important;
+                    gap: 10px;
+                    & .input-group-prepend, & .form-control {
+                    }
+                    & .input-group-prepend {
+                        & span {
+                        }
+                    }
+                    & span , & .form-control {
+                    }
+                    & .form-control {
+                    }
+                    & .getBtn {
+                        margin-bottom: 10px;
+                        min-width: 100%;
+                    }
+                }
+                & .customBtn {
+                    width: 100%;
+                    &:hover{
+                        
+                    }
+                }
+                & .android_btn {
+                    &:hover{
+                    }
+                }
+            }
+            & .mockSide {
+                &::before{
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+                & .heroimg {
+                    max-width: 180px;
+                }
+            }
+        }
+    }
 }
