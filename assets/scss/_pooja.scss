@@ -121,8 +121,8 @@
                     width: 100px;
                     height: 100px;
                     position: absolute;
-                    right: 0%;
-                    top: 7%;
+                    right: 3%;
+                    top: 14%;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
@@ -989,10 +989,12 @@
                     }
                 }
                 & .paymentIcons3 {
+                    top: 6%;
                     & img {
                     }
                 }
                 & .paymentIcons4 {
+                    bottom: 6%;
                     & img {
                     }
                 }
