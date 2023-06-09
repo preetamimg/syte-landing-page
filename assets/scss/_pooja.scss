@@ -28,15 +28,19 @@
                     border-radius: 50%;
                     position: relative;
                     & .paymentAmountDetailOuter {
-                        background-color: $white;
-                        position: absolute;
+                        // background-color: $white;
+                        position: relative;
                         top: 50%;
-                        z-index: 2;
                         transform: translate(-50%, -50%);
                         left: 50%;
-                        width: 92%;
+                        width: 100% !important;
+                        padding: 23px !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         & .paymentAmountContent {
-                            background-color: #F78702;
+                            background-color: $theme-orange;
+                            border: 8px solid $white;
                             & .paymentAmountHeading {
                                 
                                 font-size: 22px;
@@ -78,14 +82,25 @@
                                 }
                             }
                         }
+                        
+                        // &::before {
+                        //     position: absolute;
+                        //     content: "";
+                        //     border: 3px solid white;
+                        //     width: 100%;
+                        //     height: 100%;
+                        //     top: 0;
+                        //     left: 0;
+                        //     padding: 50px !important;
+                        // }
                     }
                 }
                 & .paymentIcons1 {
                     width: 100px;
                     height: 100px;
                     position: absolute;
-                    top: 25%;
-                    left: 4%;
+                    top: 23%;
+                    left: -3%;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
@@ -95,8 +110,8 @@
                     width: 100px;
                     height: 100px;
                     position: absolute;
-                    bottom: 22%;
-                    left: 6%;  
+                    bottom: 3%;
+                    left: 11%;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
@@ -106,8 +121,8 @@
                     width: 100px;
                     height: 100px;
                     position: absolute;
-                    right: 5%;
-                    top: 11%;
+                    right: 0%;
+                    top: 7%;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
@@ -117,8 +132,8 @@
                     width: 100px;
                     height: 100px;
                     position: absolute;
-                    right: 5%;
-                    bottom: 7%;
+                    right: 15%;
+                    bottom: 8%;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
@@ -1057,7 +1072,8 @@
                 & .paymentAmount {
                     height: 330px !important;
                     & .paymentAmountDetailOuter {
-                        width: 67%;
+                        z-index: 0;
+                        padding: 28px !important;
                         & .paymentAmountContent {
                             & .paymentAmountHeading {
                                 font-size: 18px;
@@ -1066,11 +1082,14 @@
                                 font-size: 14px;
                             }
                             & .paymentAmountText {
+                                font-size: 14px;
                             }
                             & .paymentLink {
                                 & .paymentLinkItem {
                                     & .paymentLinkItems {
                                         & .paymentLinkItemLink {
+                                            width: 18px;
+                                            height: 18px;
                                             & img {
                                             }
                                         }
@@ -1083,28 +1102,31 @@
                     }
                 }
                 & .paymentIcons1 {
-                    width: 80px;
-                    height: 80px;
+                    width: 70px;
+                    height: 70px;
                     top: 15%;
                     left: 1%;
                     & img {
                     }
                 }
                 & .paymentIcons2 {
-                    width: 80px;
-                    height: 80px;
+                    width: 70px;
+                    height: 70px;
                     & img {
                     }
                 }
                 & .paymentIcons3 {
-                    width: 80px;
-                    height: 80px;
+                    width: 70px;
+                    height: 70px;
+                    right: 5%;
+                    top: 1%;
                     & img {
                     }
                 }
                 & .paymentIcons4 {
-                    width: 80px;
-                    height: 80px;
+                    width: 70px;
+                    height: 70px;
+                    bottom: 0;
                     & img {
                     }
                 }
@@ -1117,6 +1139,7 @@
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
+                        font-size: 30px;
                     }
                     & .form-group {
                         & label {
@@ -1135,6 +1158,7 @@
         }
         & .contactDetail {
             & .headingLeft {
+                font-size: 30px;
             }
             & .contactDetailTitle {
             }
@@ -1184,7 +1208,8 @@
                 & .paymentAmount {
                     height: 510px !important;
                     & .paymentAmountDetailOuter {
-                        width: 87%;
+                        z-index: 0;
+                        padding: 30px !important;
                         & .paymentAmountContent {
                             & .paymentAmountHeading {
                             }
@@ -1208,18 +1233,32 @@
                     }
                 }
                 & .paymentIcons1 {
+                        width: 100px;
+                        height: 100px;
+                        top: 25%;
+                        left: -5%;
                     & img {
                     }
                 }
                 & .paymentIcons2 {
+                        width: 100px;
+                        height: 100px;
                     & img {
                     }
                 }
                 & .paymentIcons3 {
+                        width: 100px;
+                        height: 100px;
+                        right: 0%;
+                        top: 13%;
+                    
                     & img {
                     }
                 }
                 & .paymentIcons4 {
+                        width: 100px;
+                        height: 100px;
+                        bottom: 50px;
                     & img {
                     }
                 }
@@ -1232,6 +1271,7 @@
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
+                        font-size: 28px;
                     }
                     & .form-group {
                         & label {
@@ -1250,6 +1290,7 @@
         }
         & .contactDetail {
             & .headingLeft {
+                font-size: 28px;
             }
             & .contactDetailTitle {
             }
@@ -1291,27 +1332,35 @@
             & .paymentRow {
                 & .paymentContent {
                     & .paymentHeading {
-                        font-size: 24px;
+                        font-size: 22px;
                     }
                     & .paymentPara {
                     }
                 }
                 & .paymentAmount {
-                    height: 330px !important;
+                    // height: 330px !important;
+                    max-width: 330px;
+                    width: 100%;
+                    max-height: 330px !important;
+                    height: 100%;
                     & .paymentAmountDetailOuter {
+                        // z-index: 2;
+                        padding: 26px !important;
                         & .paymentAmountContent {
                             & .paymentAmountHeading {
                             }
                             & .paymentAmountTitle {
+                                font-size: 12px;
                             }
                             & .paymentAmountText {
+                                font-size: 12px;
                             }
                             & .paymentLink {
                                 & .paymentLinkItem {
                                     & .paymentLinkItems {
                                         & .paymentLinkItemLink {
-                                            width: 16px;
-                                            height: 16px;
+                                            width: 14px;
+                                            height: 14px;
                                             & img {
                                             }
                                         }
@@ -1324,18 +1373,31 @@
                     }
                 }
                 & .paymentIcons1 {
+                    width: 60px;
+                    height: 60px;
+                    top: 18%;
+                    left: 1%;
                     & img {
                     }
                 }
                 & .paymentIcons2 {
+                    width: 60px;
+                    height: 60px;
                     & img {
                     }
                 }
                 & .paymentIcons3 {
+                    width: 60px;
+                    height: 60px;
+                    right: 6%;
+                    top: 6%;                
                     & img {
                     }
                 }
                 & .paymentIcons4 {
+                    width: 60px;
+                    height: 60px;
+                    bottom: 10px;
                     & img {
                     }
                 }
@@ -1348,6 +1410,7 @@
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
+                        font-size: 22px;
                     }
                     & .form-group {
                         & label {
@@ -1366,10 +1429,162 @@
         }
         & .contactDetail {
             & .headingLeft {
+                font-size: 22px;
             }
             & .contactDetailTitle {
             }
             & .contactDetailImg {
+                width: 36px;
+                height: 36px;
+                padding: 10px;
+                & img {
+                }
+            }
+            & .contactDetailText {
+            }
+            & .socialIconItem {
+                & .socialIconItems {
+                    & .socialIconItemsLink {
+                        width: 36px;
+                        height: 36px;
+                        & img {
+                        }
+                        &.fb {
+                        }
+                        &.wa {
+                        }
+                        &.ins {
+                        }
+                        &.yt {
+                        }
+                        &.pin {
+                        }
+                        &.link {
+                        }
+                    }
+                    &:last-child {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:390px) {
+    .paymentsection {
+        & .paymentInner {
+            & .paymentRow {
+                & .paymentContent {
+                    & .paymentHeading {
+                        font-size: 20px;
+                    }
+                    & .paymentPara {
+                    }
+                }
+                & .paymentAmount {
+                    // height: 330px !important;
+                    max-width: 260px;
+                    width: 100%;
+                    max-height: 260px !important;
+                    height: 100%;
+                    & .paymentAmountDetailOuter {
+                        // z-index: 2;
+                        padding: 26px !important;
+                        & .paymentAmountContent {
+                            & .paymentAmountHeading {
+                                font-size: 16px;
+                            }
+                            & .paymentAmountTitle {
+                                font-size: 12px;
+                            }
+                            & .paymentAmountText {
+                                font-size: 12px;
+                            }
+                            & .paymentLink {
+                                & .paymentLinkItem {
+                                    & .paymentLinkItems {
+                                        padding-right: 8px;
+                                        & .paymentLinkItemLink {
+                                            width: 14px;
+                                            height: 14px;
+                                            & img {
+                                            }
+                                        }
+                                        &:last-child {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .paymentIcons1 {
+                    width: 50px;
+                    height: 50px;
+                    top: 14%;
+                    left: 3%;
+                    & img {
+                    }
+                }
+                & .paymentIcons2 {
+                    width: 50px;
+                    height: 50px;    
+                    bottom: -4%;
+                    left: 19%;
+                    & img {
+                    }
+                }
+                & .paymentIcons3 {
+                    width: 50px;
+                    height: 50px;
+                    right: 12%;
+                    top: -2%;                
+                    & img {
+                    }
+                }
+                & .paymentIcons4 {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 2px;
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+    .contactUsPage {
+        
+        & .submitcard {
+            & .cardBody {
+                & .contactForm {
+                    & .contactHeading {
+                        font-size: 20px;
+                    }
+                    & .form-group {
+                        & label {
+                        }
+                        & .form-control {
+                            &:active, &:hover, &:focus {
+                            }
+                        }
+                    }
+                    & .submitButton {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .contactDetail {
+            & .headingLeft {
+                font-size: 20px;
+            }
+            & .contactDetailTitle {
+            }
+            & .contactDetailImg {
+                width: 30px;
+                height: 30px;
+                padding: 8px;
                 & img {
                 }
             }
