@@ -18,7 +18,7 @@
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="offcanvasBtn">
+            <button class="offcanvasBtn shadow-none border-0">
                 <img src="assets/img/menu.svg" class="w-100 h-auto" alt="">
             </button>
             <div class="collapse navbar-collapse navitems" id="navbarsExample04">
@@ -472,19 +472,45 @@
 
     <!-------------off canvas ------------------->
     <div class="container-fluid px-0">
-            <div class="offcanvasSection hide">
-                <div class="offcanvasInner justify-content-between px-3">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-auto">
-                            <div class="offcanvasLogoImg">
-                                <img src="assets/img/logo/logo.svg" class="w-100 h-100" alt="">
+            <div class="offcanvasSection hide bg-dark">
+                <div class="offcanvasInner">
+                    <div class="offcanvasHeader">
+                        <div class="row justify-content-between align-items-center mx-0">
+                            <div class="col-auto">
+                                <div class="offcanvasLogoImg">
+                                    <img src="assets/img/logo/logo.svg" class="w-100 h-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="offcanvasBtn closeBtn">
+                                    <img src="assets/img/closeBtn.svg" class="w-100 h-100" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <div class="offcanvasBtn closeBtn">
-                                <img src="assets/img/closeBtn.svg" class="w-100 h-100" alt="">
-                            </div>
-                        </div>
+                    </div>
+                    <div class="offcanvasBody">
+                        <ul class="offcanvasItems">
+                            <li class="offcanvasList">
+                                <a href="" class="offcanvasListLink">
+                                    Pricing 
+                                </a>
+                            </li>
+                            <li class="offcanvasList">
+                                <a href="" class="offcanvasListLink">
+                                    About Us 
+                                </a>
+                            </li>
+                            <li class="offcanvasList">
+                                <a href="" class="offcanvasListLink">
+                                    Login 
+                                </a>
+                            </li>
+                            <li class="offcanvasList">
+                                <a href="" class="offcanvasListLink">
+                                    Sign Up 
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
