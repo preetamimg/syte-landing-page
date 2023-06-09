@@ -416,7 +416,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="btn submitButton">Submit</button>
+                                        <button class="btn submitButton shadow-none">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -471,8 +471,8 @@
     </div>
 
     <!-------------off canvas ------------------->
-    <div class="container-fluid px-0">
-            <div class="offcanvasSection hide bg-dark">
+    <div class="container-fluid px-0" >
+            <div class="offcanvasSection hide bg-white">
                 <div class="offcanvasInner">
                     <div class="offcanvasHeader">
                         <div class="d-flex justify-content-between align-items-center px-3">
@@ -511,6 +511,7 @@
                 </div>
             </div>
     </div>
+    <div class="modalbackdrop hidden"></div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -522,15 +523,31 @@
         var offcanvasBtn = document.querySelectorAll('.offcanvasBtn');
         var offcanvasSection = document.querySelector('.offcanvasSection');
         var crossimg = document.querySelector('.crossimg');
+        var backdropModal = document.querySelector('.modalbackdrop');
         offcanvasBtn.forEach(offbtn =>{
             offbtn.addEventListener('click', () => {
+            
             if(offcanvasSection.classList.contains('hide')){
                 offcanvasSection.classList.remove('hide');
                 offcanvasSection.classList.add('show');
+                
+                if (backdropModal.classList.contains('hidden')){
+                    backdropModal.classList.remove('hidden');
+                    backdropModal.classList.add('shows');
+                    
+                }
+
+                document.querySelector("body").style.overflow = "hidden";
             }
             else if(offcanvasSection.classList.contains('show')) {
                 offcanvasSection.classList.remove('show');
                 offcanvasSection.classList.add('hide');
+                
+                if(backdropModal.classList.contains('shows')) {
+                        backdropModal.classList.remove('shows');
+                        backdropModal.classList.add('hidden');
+                    }
+                    document.querySelector("body").style.overflow = "auto";
             }
             });
         })
