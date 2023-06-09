@@ -46,9 +46,10 @@
     .applicationFluid{
         & .applicationContainer{
             & .applicationImg{
+                text-align: center;
                 & img{
                     width: 100%;
-                    max-width: 600px;
+                    max-width: 450px;
                 }
             }
             & .applictionMainHeading{
@@ -220,12 +221,16 @@
         & .applicationContainer{
             & .applicationImg{
                 & img{
-                    max-width: 500px;
+                    max-width: 400px;
                 }
             }
             & .applictionMainHeading{
+                font-size: 25px;
+                line-height: normal;
             }
             & .applictionSubHeading{
+                font-size: 15px;
+                line-height: normal;
             }
         }
     }
@@ -268,7 +273,8 @@
             }
             & .applictionMainHeading{
                 margin-top: 20px;
-                font-size: 20px;
+                font-size: 25px;
+                line-height: normal;
             }
             & .applictionSubHeading{
                 font-size: 15px;

@@ -36,9 +36,12 @@
   margin-top: 20px;
 }
 
+.applicationFluid .applicationContainer .applicationImg {
+  text-align: center;
+}
 .applicationFluid .applicationContainer .applicationImg img {
   width: 100%;
-  max-width: 600px;
+  max-width: 450px;
 }
 .applicationFluid .applicationContainer .applictionMainHeading {
   font-size: 36px;
@@ -88,7 +91,15 @@
     font-size: 15px;
   }
   .applicationFluid .applicationContainer .applicationImg img {
-    max-width: 500px;
+    max-width: 400px;
+  }
+  .applicationFluid .applicationContainer .applictionMainHeading {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .applicationFluid .applicationContainer .applictionSubHeading {
+    font-size: 15px;
+    line-height: normal;
   }
 }
 @media (max-width: 575.98px) {
@@ -112,7 +123,8 @@
   }
   .applicationFluid .applicationContainer .applictionMainHeading {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: normal;
   }
   .applicationFluid .applicationContainer .applictionSubHeading {
     font-size: 15px;
