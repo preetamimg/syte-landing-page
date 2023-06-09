@@ -312,7 +312,7 @@
             visibility: hidden;
             width: 0px;
             & .offcanvasInner {
-                display: flex;
+                display: none;
             }
         }
         &.show {
