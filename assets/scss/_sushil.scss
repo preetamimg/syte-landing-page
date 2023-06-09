@@ -102,6 +102,7 @@
     .manageSection {
         & .leftSection {
             & .cirleBox {
+                padding: 80px;
                 max-width: 430px;
                 max-height: 430px;
                 & .textBox {
@@ -110,12 +111,20 @@
                 }
                 & .imagesBox {
                     & .topLeftImg {
+                        height: 140px;
+                        top: -55px;
+                        left: 15px;
                     }
                     & .topRightImg {
+                        height: 140px;
+                        right: 10px;
+                        top: 10px;
                     }
                     & .bottomLeftImg {
+                        height: 140px;
                     }
                     & .bottomRighttImg {
+                        height: 140px;
                     }
                 }
             }
@@ -133,6 +142,50 @@
     }
 }
 @include media-breakpoint-down(lg) {
+    .manageSection {
+        & .leftSection {
+            & .cirleBox {
+                padding: 70px;
+                max-width: 380px;
+                max-height: 380px;
+                & .textBox {
+                    font-size: 13px;
+                    padding: 12px 10px;
+                    margin-bottom: 10px;                
+                    &.box1 {
+                    }
+                }
+                & .imagesBox {
+                    & .topLeftImg {
+                        height: 100px;
+                        top: -15px;
+                        left: 25px;
+                    }
+                    & .topRightImg {
+                        height: 110px;
+                        right: 15px;
+                        top: 30px;
+                    }
+                    & .bottomLeftImg {
+                        height: 120px;
+                    }
+                    & .bottomRighttImg {
+                        height: 120px;
+                    }
+                }
+            }
+        }
+        & .rightSection {
+            & .secHeading {
+                font-size: 28px;
+            }
+            & .secText {
+                font-size: 16px;
+                &:last-child {
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(md) {
 }
