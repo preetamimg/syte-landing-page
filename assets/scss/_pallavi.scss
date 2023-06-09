@@ -44,6 +44,7 @@
     }
 
     .applicationFluid{
+        background-color: lighten($theme-orange, 48);
         & .applicationContainer{
             & .applicationImg{
                 text-align: center;
@@ -60,7 +61,6 @@
             }
             & .applictionSubHeading{
                 font-size: 17px;
-                font-weight: 500;
             }
         }
     }
@@ -277,7 +277,7 @@
                 line-height: normal;
             }
             & .applictionSubHeading{
-                font-size: 15px;
+                font-size: 14px;
             }
         }
     }

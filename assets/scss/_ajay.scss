@@ -59,6 +59,7 @@
     }
 
     .heroSection {
+        min-height: 100vh;
         background-color: lighten($theme2, 40);
         & .innersection {
             padding-top: 25px;
@@ -80,6 +81,7 @@
                     }
                     & .input-group-prepend {
                         & span {
+                            border-right: none;
                             border-radius: 10px 0px 0px 10px;
                         }
                     }
@@ -296,6 +298,7 @@
 }
 @include media-breakpoint-down(md) {
     .header {
+        background-color: lighten($theme2, 40);
         &.Header_fix {
             & .navbar-brand {
                 height: 60px;
@@ -389,6 +392,44 @@
     }
 }
 @include media-breakpoint-down(sm) {
+    .header {
+        &.Header_fix {
+            & .navbar-brand {
+                height: 55px;
+            }
+        }
+    }
+    .headersection {
+        padding-left: 0;
+        padding-right: 0;
+        & .navbar-brand {
+            height: 60px;
+            padding: 0;
+        }
+        & .navitems {
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                        &::before{
+                        }
+                        &:hover{
+                            &::before{
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+            width: 25px;
+        }
+    }
     .heroSection {
         & .innersection {
             & .contantSide {
@@ -423,11 +464,17 @@
                     }
                 }
                 & .androidBtn {
-                    row-gap: 12px;
+                    gap: 12px;
                     // font-size: 14px;
                     // height: 45px;
                     // border-radius: 10px;
-                    &:hover{
+                    & .col-auto {
+                        padding: 0;
+                    }
+                    & .android_btn {
+                        padding: 4px 8px !important;
+                        font-size: 13px;
+                        gap: 5px;
                     }
                 }
             }
@@ -514,8 +561,8 @@
             }
             & .mockSide {
                 &::before{
-                    max-width: 250px;
-                    max-height: 250px;
+                    max-width: 300px;
+                    max-height: 300px;
                 }
                 & .heroimg {
                     max-width: 180px;
