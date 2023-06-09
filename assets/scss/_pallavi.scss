@@ -22,9 +22,10 @@
                     background-color: $theme1;
                     border-radius: 50%;
                     margin: auto;
+                    transition: all 0.5s;
+                    position: relative;
                     & .featureImg{
-                        width: 50px;
-                        height: 50px;
+                        height: 100px;
                         & img{
                             width: 100%;
                             height: 100%;
@@ -45,11 +46,10 @@
     .applicationFluid{
         & .applicationContainer{
             & .applicationImg{
-                width: 100%;
-                height: 100%;
+                text-align: center;
                 & img{
                     width: 100%;
-                    height: 1005;
+                    max-width: 450px;
                 }
             }
             & .applictionMainHeading{
@@ -99,6 +99,19 @@
             }
         }
     }
+    
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                & img{
+                }
+            }
+            & .applictionMainHeading{
+            }
+            & .applictionSubHeading{
+            }
+        }
+    }
 }
 @include media-breakpoint-down(xl) {
     .featuresFluid{
@@ -121,6 +134,18 @@
             }
         }
     }
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                & img{
+                }
+            }
+            & .applictionMainHeading{
+            }
+            & .applictionSubHeading{
+            }
+        }
+    }
 }
 @include media-breakpoint-down(lg) {
     .featuresFluid{
@@ -133,13 +158,32 @@
             }
             & .featureCard{
                 & .featureImgBg{
+                    width: 120px;
+                    height: 120px;
                     & .featureImg{
+                        height: 70px;
                         & img{
                         }
                     }
                 }
                 & .featutrePara{
                 }
+            }
+        }
+    }
+    
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                margin: auto;
+                & img{
+                }
+            }
+            & .applictionMainHeading{
+                text-align: center;
+            }
+            & .applictionSubHeading{
+                text-align: center;
             }
         }
     }
@@ -158,7 +202,10 @@
             }
             & .featureCard{
                 & .featureImgBg{
+                    width: 100px;
+                    height: 100px;
                     & .featureImg{
+                        height: 40px;
                         & img{
                         }
                     }
@@ -166,6 +213,24 @@
                 & .featutrePara{
                     font-size: 15px;
                 }
+            }
+        }
+    }
+    
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                & img{
+                    max-width: 400px;
+                }
+            }
+            & .applictionMainHeading{
+                font-size: 25px;
+                line-height: normal;
+            }
+            & .applictionSubHeading{
+                font-size: 15px;
+                line-height: normal;
             }
         }
     }
@@ -184,7 +249,10 @@
             }
             & .featureCard{
                 & .featureImgBg{
+                    width: 80px;
+                    height: 80px;
                     & .featureImg{
+                        height: 40px;
                         & img{
                         }
                     }
@@ -193,6 +261,23 @@
                     font-size: 15px;
                     margin-bottom: 15px;
                 }
+            }
+        }
+    }
+    
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                & img{
+                }
+            }
+            & .applictionMainHeading{
+                margin-top: 20px;
+                font-size: 25px;
+                line-height: normal;
+            }
+            & .applictionSubHeading{
+                font-size: 15px;
             }
         }
     }
