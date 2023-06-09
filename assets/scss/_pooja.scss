@@ -308,16 +308,17 @@
         left: 0;
         transition: all .5s;
         z-index: 9999;
+        width: 100%;
         &.hide{
             visibility: hidden;
-            width: 0px;
+            max-width: 0px;
             & .offcanvasInner {
                 display: none;
             }
         }
         &.show {
             visibility: visible;
-            width: 290px;
+            max-width: 290px;
             & .offcanvasInner{
                 // display: flex;
             }
@@ -326,6 +327,7 @@
             & .offcanvasHeader {
                 & .offcanvasLogoImg {
                     width: 100px;
+                    height: 100px;
                     & img {
                         aspect-ratio: 10/10;
                         object-fit: contain;
