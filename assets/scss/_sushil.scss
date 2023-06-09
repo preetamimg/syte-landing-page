@@ -67,14 +67,15 @@
         }
         & .rightSection {
             & .secHeading {
-                font-size: 56px;
+                font-size: 46px;
                 line-height: 1.4;
                 font-weight: 700;
-                color: darken($theme-orange, 35);
+                color: $black;
+                // color: darken($theme-orange, 35);
                 margin-bottom: 30px;
             }
             & .secText {
-                font-size: 20px;
+                font-size: 17px;
                 line-height: normal;
                 font-weight: 400;
                 color: $black;
@@ -134,7 +135,7 @@
         }
         & .rightSection {
             & .secHeading {
-                font-size: 42px;
+                font-size: 36px;
             }
             & .secText {
                 font-size: 18px;
@@ -180,7 +181,7 @@
         }
         & .rightSection {
             & .secHeading {
-                font-size: 28px;
+                font-size: 30px;
             }
             & .secText {
                 font-size: 16px;
@@ -214,6 +215,7 @@
             padding-top: 40px;
             text-align: center;
             & .secHeading {
+                font-size: 25px;
             }
             & .secText {
                 margin-bottom: 15px;
@@ -251,6 +253,7 @@
             }
             & .secText {
                 font-size: 14px;
+                line-height: 1.5;
                 &:last-child {
                 }
             }
@@ -298,7 +301,7 @@
         & .rightSection {
             padding-top: 30px;
             & .secHeading {
-                font-size: 22px;
+                font-size: 25px;
                 margin-bottom: 15px;
             }
             & .secText {

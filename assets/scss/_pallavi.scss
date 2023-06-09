@@ -10,7 +10,7 @@
                     margin-bottom: 10px;
                 }
                 & .featuresSubHeading{
-                    font-size: 36px;
+                    font-size: 46px;
                     font-weight: 600;
                     line-height: 1.4;
                 }
@@ -54,8 +54,8 @@
                 }
             }
             & .applictionMainHeading{
-                font-size: 36px;
-                font-weight: 600;
+                font-size: 46px;
+                font-weight: 700;
                 line-height: 1.4;
                 margin-bottom: 10px;
             }
@@ -120,6 +120,7 @@
                 & .featuresMainHeading{
                 }
                 & .featuresSubHeading{
+                    font-size: 36px;
                 }
             }
             & .featureCard{
@@ -141,6 +142,7 @@
                 }
             }
             & .applictionMainHeading{
+                font-size: 36px;
             }
             & .applictionSubHeading{
             }
@@ -154,6 +156,7 @@
                 & .featuresMainHeading{
                 }
                 & .featuresSubHeading{
+                    font-size: 30px;
                 }
             }
             & .featureCard{
@@ -180,6 +183,7 @@
                 }
             }
             & .applictionMainHeading{
+                font-size: 30px;
             }
             & .applictionSubHeading{
             }
@@ -224,12 +228,11 @@
             }
             & .applictionMainHeading{
                 font-size: 25px;
-                line-height: normal;
+                line-height: 1.5;
                 text-align: center;
             }
             & .applictionSubHeading{
                 font-size: 15px;
-                line-height: normal;
                 text-align: center;
             }
         }
@@ -259,7 +262,6 @@
                 }
                 & .featutrePara{
                     font-size: 15px;
-                    margin-bottom: 15px;
                 }
             }
         }

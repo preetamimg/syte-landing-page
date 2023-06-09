@@ -1,11 +1,11 @@
 @include media-breakpoint(basic) {
     .paymentsection {
-        background-color: lighten($theme2, 40);
+        background-color: #F2FEDC;
         & .paymentInner {
             & .paymentRow {
                 & .paymentContent {
                     & .paymentHeading {
-                        font-size: 36px;
+                        font-size: 46px;
                         line-height: 1.1;
                         color: $black;
                         font-weight: 700;
@@ -14,7 +14,7 @@
                     & .paymentPara {
                         margin-bottom: 15px;
                         line-height: 1.8;
-                        font-size: 14px;
+                        font-size: 17px;
                         color: $gray-600;
                     }
                 }
@@ -150,10 +150,10 @@
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
-                        font-size: 36px;
+                        font-size: 46px;
                         line-height: 1.1;
                         color: $black;
-                        font-weight: 700;
+                        font-weight: 600;
                         margin-bottom: 20px;
                     }
                     & .form-group {
@@ -180,6 +180,7 @@
                         font-weight: 600;
                         font-size: 16px;
                         background-color: $theme1;
+                        box-shadow: none;
                         &:hover {
                             background-color: darken($color: $theme1, $amount: 10);
                         }
@@ -189,10 +190,10 @@
         }
         & .contactDetail {
             & .headingLeft {
-                font-size: 36px;
+                font-size: 46px;
                 line-height: 1.1;
                 color: $black;
-                font-weight: 700;
+                font-weight: 600;
                 margin-bottom: 20px;
             }
             & .contactDetailTitle {
@@ -275,33 +276,24 @@
         position: fixed;
         top: 0;
         left: 0;
-        transition: all .5s;
         z-index: 9999;
         width: 100%;
-        
+        max-width: 290px;
+        transition: all 0.3s ease-in-out;
         &.hide{
-            visibility: hidden;
-            max-width: 0px;
-            & .offcanvasInner {
-                display: none;
-            }
+            transform: translateX(-100%);
         }
         &.show {
-            visibility: visible;
-            max-width: 290px;
+            transform: translateX(0);
             & .offcanvasInner{
-                // display: flex;
             }
         }
         & .offcanvasInner {
+            height: 100%;
             & .offcanvasHeader {
+                padding: 0.5rem 1rem;
                 & .offcanvasLogoImg {
-                    width: 100px;
-                    height: 100px;
-                    & img {
-                        aspect-ratio: 10/10;
-                        object-fit: contain;
-                    }
+                    height: 65px;
                 }
                 & .closeBtn {
                     width: 30px;
@@ -330,8 +322,9 @@
                             display: flex;
                             color: $black;
                             font-size: 16px;
+                            font-weight: 600;
                             width: 100%;
-                            padding: 10px 10px;
+                            padding: 8px 16px;
                             text-decoration: none;
                             &:hover {
                                 background-color:$theme1;
@@ -350,6 +343,7 @@
         z-index: -2;
         width: 100vw;
         height: 100vh;
+        transition: all 0.3s ease-in-out;
         background-color: #000;
         &.hidden {
             opacity: 0;
@@ -1041,12 +1035,12 @@
             & .paymentRow {
                 & .paymentContent {
                     & .paymentHeading {
+                        font-size: 36px;
                     }
                     & .paymentPara {
                     }
                 }
                 & .paymentAmount {
-                    
                     height: 450px !important;
                     & .paymentAmountDetailOuter {
                         width: 87%;
@@ -1094,11 +1088,11 @@
         }
     }
     .contactUsPage {
-        
         & .submitcard {
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
+                        font-size: 36px;
                     }
                     & .form-group {
                         & label {
@@ -1117,6 +1111,7 @@
         }
         & .contactDetail {
             & .headingLeft {
+                font-size: 36px;
             }
             & .contactDetailTitle {
             }
@@ -1236,6 +1231,7 @@
                         font-size: 30px;
                     }
                     & .form-group {
+                        margin-bottom: 8px;
                         & label {
                         }
                         & .form-control {
@@ -1294,13 +1290,18 @@
             & .paymentRow {
                 & .paymentContent {
                     & .paymentHeading {
-                        font-size: 28px;
+                        text-align: center;
+                        font-size: 25px;
                     }
                     & .paymentPara {
+                        line-height: 1.5;
+                        margin-bottom: 0;
+                        text-align: center;
                     }
                 }
                 & .paymentAmount {
-                    height: 510px !important;
+                    width: 80%;
+                    height: 408px !important;
                     & .paymentAmountDetailOuter {
                         z-index: 0;
                         padding: 30px !important;
@@ -1327,32 +1328,32 @@
                     }
                 }
                 & .paymentIcons1 {
-                        width: 100px;
-                        height: 100px;
-                        top: 25%;
+                        width: 80px;
+                        height: 80px;
+                        top: 20%;
                         left: -5%;
                     & img {
                     }
                 }
                 & .paymentIcons2 {
-                        width: 100px;
-                        height: 100px;
+                        width: 80px;
+                        height: 80px;
                     & img {
                     }
                 }
                 & .paymentIcons3 {
-                        width: 100px;
-                        height: 100px;
+                        width: 80px;
+                        height: 80px;
                         right: 0%;
-                        top: 13%;
+                        top: 15%;
                     
                     & img {
                     }
                 }
                 & .paymentIcons4 {
-                        width: 100px;
-                        height: 100px;
-                        bottom: 50px;
+                        width: 80px;
+                        height: 80px;
+                        bottom: 10px;
                     & img {
                     }
                 }
@@ -1360,12 +1361,11 @@
         }
     }
     .contactUsPage {
-        
         & .submitcard {
             & .cardBody {
                 & .contactForm {
                     & .contactHeading {
-                        font-size: 28px;
+                        font-size: 25px;
                     }
                     & .form-group {
                         & label {
@@ -1384,7 +1384,7 @@
         }
         & .contactDetail {
             & .headingLeft {
-                font-size: 28px;
+                font-size: 25px;
             }
             & .contactDetailTitle {
             }
@@ -1427,8 +1427,10 @@
                 & .paymentContent {
                     & .paymentHeading {
                         font-size: 22px;
+                        margin-bottom: 10px;
                     }
                     & .paymentPara {
+                        font-size: 14px;
                     }
                 }
                 & .paymentAmount {
@@ -1499,7 +1501,6 @@
         }
     }
     .contactUsPage {
-        
         & .submitcard {
             & .cardBody {
                 & .contactForm {
@@ -1515,6 +1516,9 @@
                         }
                     }
                     & .submitButton {
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 5px;
                         &:hover {
                         }
                     }
@@ -1524,6 +1528,7 @@
         & .contactDetail {
             & .headingLeft {
                 font-size: 22px;
+                margin-bottom: 8px;
             }
             & .contactDetailTitle {
             }
@@ -1562,6 +1567,37 @@
             }
         }
     }
+    .offcanvasSection {
+        &.hide{
+            & .offcanvasInner {
+            }
+        }
+        &.show {
+            & .offcanvasInner{
+            }
+        }
+        & .offcanvasInner {
+            & .offcanvasHeader {
+                & .offcanvasLogoImg {
+                    height: 60px;
+                }
+                & .closeBtn {
+                    & img {
+                    }
+                }
+            }
+            & .offcanvasBody {
+                & .offcanvasItems {
+                    & .offcanvasList {
+                        & .offcanvasListLink {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:390px) {
@@ -1577,9 +1613,9 @@
                 }
                 & .paymentAmount {
                     // height: 330px !important;
-                    max-width: 260px;
+                    max-width: 280px;
                     width: 100%;
-                    max-height: 260px !important;
+                    max-height: 280px !important;
                     height: 100%;
                     & .paymentAmountDetailOuter {
                         // z-index: 2;

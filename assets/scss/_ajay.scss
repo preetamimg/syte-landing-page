@@ -1,5 +1,6 @@
 @include media-breakpoint(basic) {
     .header {
+        z-index: 5;
         background-color: transparent;
         transition: all 0.3s ease-in-out;
         &.Header_fix {
@@ -55,6 +56,9 @@
             border: none;
             padding: 0;
             display: none;
+            &:focus {
+                outline: none !important;
+            }
         }
     }
 
@@ -341,7 +345,7 @@
             & .contantSide {
                 & .mainHeading {
                     text-align: center;
-                    // font-size: 45px;
+                    font-size: 35px;
                 }
                 & .subHeading {
                     text-align: center;
@@ -382,8 +386,8 @@
             }
             & .mockSide {
                 &::before{
-                    max-width: 300px;
-                    max-height: 300px;
+                    max-width: 350px;
+                    max-height: 350px;
                 }
                 & .heroimg {
                     // max-width: 300px;
