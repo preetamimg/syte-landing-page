@@ -26,6 +26,9 @@
                     &.box1 {
                         z-index: 2;
                     }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
                 & .imagesBox {
                     position: absolute;
@@ -77,7 +80,7 @@
                 color: $black;
                 margin-bottom: 25px;
                 &:last-child {
-                    margin-bottom: 0;
+                    margin-bottom: 0 !important;
                 }
             }
         }
@@ -188,6 +191,120 @@
     }
 }
 @include media-breakpoint-down(md) {
+    .manageSection {
+        & .leftSection {
+            & .cirleBox {
+                & .textBox {             
+                    &.box1 {
+                    }
+                }
+                & .imagesBox {
+                    & .topLeftImg {
+                    }
+                    & .topRightImg {
+                    }
+                    & .bottomLeftImg {
+                    }
+                    & .bottomRighttImg {
+                    }
+                }
+            }
+        }
+        & .rightSection {
+            padding-top: 40px;
+            text-align: center;
+            & .secHeading {
+            }
+            & .secText {
+                margin-bottom: 15px;
+                &:last-child {
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
+    .manageSection {
+        & .leftSection {
+            & .cirleBox {
+                & .textBox {             
+                    &.box1 {
+                    }
+                }
+                & .imagesBox {
+                    & .topLeftImg {
+                    }
+                    & .topRightImg {
+                    }
+                    & .bottomLeftImg {
+                    }
+                    & .bottomRighttImg {
+                    }
+                }
+            }
+        }
+        & .rightSection {
+            padding-top: 30px;
+            & .secHeading {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            & .secText {
+                font-size: 14px;
+                &:last-child {
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:450px){
+    .manageSection {
+        & .leftSection {
+            padding: 0;
+            & .cirleBox {
+                width: 290px;
+                height: 290px;
+                padding: 35px;
+                & .textBox { 
+                    font-size: 12px;
+                    padding: 8px 6px;            
+                    &.box1 {
+                    }
+                    // &.box4,
+                    // &.box5 {
+                    //     display: none;
+                    // }
+                }
+                & .imagesBox {
+                    & .topLeftImg {
+                        height: 80px;
+                        top: -15px;
+                        left: 0;
+                    }
+                    & .topRightImg {
+                        height: 95px;
+                        right: 0px;
+                        top: 15px;
+                    }
+                    & .bottomLeftImg {
+                        height: 90px;
+                    }
+                    & .bottomRighttImg {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        & .rightSection {
+            padding-top: 30px;
+            & .secHeading {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            & .secText {
+                &:last-child {
+                }
+            }
+        }
+    }
 }
