@@ -180,10 +180,8 @@
                 }
             }
             & .applictionMainHeading{
-                text-align: center;
             }
             & .applictionSubHeading{
-                text-align: center;
             }
         }
     }
@@ -227,10 +225,12 @@
             & .applictionMainHeading{
                 font-size: 25px;
                 line-height: normal;
+                text-align: center;
             }
             & .applictionSubHeading{
                 font-size: 15px;
                 line-height: normal;
+                text-align: center;
             }
         }
     }

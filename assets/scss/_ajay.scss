@@ -51,7 +51,6 @@
             }
         }
         & .offcanvasBtn {
-            width: 35px;
             background-color: transparent;
             border: none;
             padding: 0;
@@ -107,7 +106,6 @@
                     }
                 }
                 & .androidBtn {
-                    gap: 10px;
                     & .android_btn {
                         text-decoration: none;
                         background-color: $black;
@@ -161,7 +159,35 @@
 @include media-breakpoint-down(xxl) {
 }
 @include media-breakpoint-down(xl) {
+    .headersection {
+        & .navbar-brand {
+            height: 80px;
+        }
+        & .navitems {
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                        &::before{
+                        }
+                        &:hover{
+                            &::before{
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+        }
+    }
     .heroSection {
+        height: auto !important;
         & .innersection {
             & .contantSide {
                 & .mainHeading {
@@ -180,7 +206,7 @@
                         }
                     }
                     & span , & .form-control {
-                        font-size: 18px;
+                        font-size: 17px;
                     }
                     & .form-control {
                         // border-radius: 0px 10px 10px 0px;
@@ -206,11 +232,11 @@
             & .mockSide {
                 position: relative;
                 &::before{
-                    max-width: 450px;
-                    max-height: 450px;
+                    max-width: 400px;
+                    max-height: 400px;
                 }
                 & .heroimg {
-                    // max-width: 300px;
+                    max-width: 250px;
                 }
             }
         }
@@ -235,7 +261,8 @@
                         }
                     }
                     & span , & .form-control {
-                        font-size: 16px;
+                        font-size: 15px;
+                        padding: 5px 8px;
                     }
                     & .form-control {
                     }
@@ -257,8 +284,8 @@
             & .mockSide {
                 position: relative;
                 &::before{
-                    max-width: 250px;
-                    max-height: 250px;
+                    max-width: 300px;
+                    max-height: 300px;
                 }
                 & .heroimg {
                     max-width: 200px;
@@ -268,8 +295,16 @@
     }
 }
 @include media-breakpoint-down(md) {
+    .header {
+        &.Header_fix {
+            & .navbar-brand {
+                height: 60px;
+            }
+        }
+    }
     .headersection {
         & .navbar-brand {
+            height: 65px;
         }
         & .navitems {
             & .navbar-nav {
@@ -293,6 +328,7 @@
             }
         }
         & .offcanvasBtn {
+            width: 25px;
             display: flex;
         }
     }
@@ -300,9 +336,11 @@
         & .innersection {
             & .contantSide {
                 & .mainHeading {
+                    text-align: center;
                     // font-size: 45px;
                 }
                 & .subHeading {
+                    text-align: center;
                     // font-size: 25px;
                 }
                 & .inputBox {
@@ -384,10 +422,10 @@
                         
                     }
                 }
-                & .android_btn {
-                    gap: 8px;
+                & .androidBtn {
+                    row-gap: 12px;
                     // font-size: 14px;
-                    height: 45px;
+                    // height: 45px;
                     // border-radius: 10px;
                     &:hover{
                     }
@@ -407,6 +445,37 @@
 }
 
 @media screen and (max-width: 450px) {
+    .headersection {
+        padding-left: 0;
+        padding-right: 0;
+        & .navbar-brand {
+            padding: 0;
+        }
+        & .navitems {
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                        &::before{
+                        }
+                        &:hover{
+                            &::before{
+                            }
+                        }
+                    }
+                    &.active{
+                        & .nav-link{
+                            &::before{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvasBtn {
+            width: 25px;
+            display: flex;
+        }
+    }
     .heroSection {
         & .innersection {
             & .contantSide {
