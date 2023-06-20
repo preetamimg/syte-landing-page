@@ -71,7 +71,7 @@
                 & .mainHeading {
                     font-size: 75px;
                     font-weight: 600;
-                    line-height: normal;
+                    line-height: 105%;
                 }
                 & .subHeading {
                     font-size: 35px;
@@ -362,6 +362,7 @@
                     }
                     & span , & .form-control {
                         // font-size: 16px;
+                        border: 1px solid $black;
                     }
                     & .form-control {
                         // border-radius: 0px 10px 10px 0px;
