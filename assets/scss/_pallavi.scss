@@ -48,9 +48,22 @@
         & .applicationContainer{
             & .applicationImg{
                 text-align: center;
+                position: relative;
+                &::before {
+                    max-width: 500px;
+                    height: 100%;
+                    width: 100%;
+                    max-height: 500px;
+                    border-radius: 100%;
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    background-color: $theme1;
+                }
                 & img{
                     width: 100%;
-                    max-width: 450px;
+                    max-width: 300px;
                 }
             }
             & .applictionMainHeading{
@@ -179,7 +192,12 @@
         & .applicationContainer{
             & .applicationImg{
                 margin: auto;
+                &::before {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
                 & img{
+                    max-width: 200px;
                 }
             }
             & .applictionMainHeading{
@@ -222,8 +240,11 @@
     .applicationFluid{
         & .applicationContainer{
             & .applicationImg{
+                &::before {
+                    max-width: 350px;
+                    max-height: 350px;
+                }
                 & img{
-                    max-width: 400px;
                 }
             }
             & .applictionMainHeading{
@@ -280,6 +301,31 @@
             }
             & .applictionSubHeading{
                 font-size: 14px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:499.99px) {
+
+    .applicationFluid{
+        & .applicationContainer{
+            & .applicationImg{
+                &::before {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+                & img{
+                    max-width: 180px;
+                }
+            }
+            & .applictionMainHeading{
+                font-size: 25px;
+                line-height: 1.5;
+                text-align: center;
+            }
+            & .applictionSubHeading{
+                font-size: 15px;
+                text-align: center;
             }
         }
     }

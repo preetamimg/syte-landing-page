@@ -147,7 +147,17 @@
             }
         }
     }
-    
+    .animateImg {
+        animation: howtowork2 2s ease-in-out infinite alternate-reverse both;
+    }
+    @keyframes howtowork2 {
+        0% {
+            transform: translateX(8px);
+        }
+        100% {
+            transform: translateX(-8px);
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {
